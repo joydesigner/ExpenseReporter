@@ -11,13 +11,16 @@
         <div class="col-md-12" ng-include="'app/layout/topNav.html'"></div>
         <div ng-view></div>
     </div>
+    <!-- angular lib -->
     <script src="../lib/angular/angular.min.js"></script>
     <script src="../lib/angular-route/angular-route.min.js"></script>
 
+    <!-- app angular files -->
     <script src="app/app.js"></script>
-
     <script src="scripts/controllers/expensesController.js"></script>
-    <script src="app/Expense/Expense.js"></script>
+    <script src="scripts/services/expensesDataService.js"></script>
+
+    <!-- expense related class -->
     <script src="app/Expense/ExpenseItem.js"></script>
 </body>
 </html>

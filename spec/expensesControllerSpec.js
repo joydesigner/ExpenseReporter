@@ -10,12 +10,12 @@ describe('expensesController', function(){
     beforeEach(inject(function($controller, $rootScope){
         $controllerConstructor = $controller;
 
-        scope = $rootScope.$new();
+        //scope = $rootScope.$new();
     }));
 
     it("should have 3 expense items", function(){
         var ctrl = $controllerConstructor('expensesController', {
-            $scope: scope
+            //$scope: scope
         });
 
         expect(ctrl.expenseItems.length).toEqual(3);
